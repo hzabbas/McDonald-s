@@ -110,6 +110,47 @@ a{
     font-weight: 500;
 }
 
+.nav_menu_sidbar{
+    flex-direction: column;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    padding: 20px;
+    height: 100%;
+    background-color: var(--color_fff);
+    width: 200px;
+    border-right: 2px solid var(--color_7D7C7C);
+    transform: translateX(-400px);
+    -webkit-transform: translateX(-400px);
+    -moz-transform: translateX(-400px);
+    -ms-transform: translateX(-400px);
+    -o-transform: translateX(-400px);
+    transition: all 250ms ease-out;
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -ms-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+}
+#input_menu:checked + label + ul {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
+.menu-icon .fa-xmark {
+    width: 35px;
+    height: 35px;
+    color: var(--color_504F4F);
+    display: none;
+}
+#input_menu:checked + label svg {
+    display: none;
+}
+#input_menu:checked + label .fa-xmark {
+    display: block;
+}
+
 @media(max-width:834px){
     .Nav {
         grid-template-columns: repeat(3 , auto);
