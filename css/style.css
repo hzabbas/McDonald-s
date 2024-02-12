@@ -69,6 +69,7 @@ a{
 .container_site {
     max-width: 1170px;
     margin: 0px auto;
+    padding: 0 0.5rem;
 }
 .Nav {
     display: grid;
@@ -107,5 +108,26 @@ a{
     background-color: var(--color_C90000);
     color: var(--color_fff);
     font-weight: 500;
+}
+
+@media(max-width:834px){
+    .Nav {
+        grid-template-columns: repeat(3 , auto);
+    }
+    .Nav > ul {
+        display: none;
+    }
+    .Nav_link {
+        justify-self: center;
+    }
+    .menu-icon {
+        justify-self: flex-end;
+    }
+
+}
+@media(min-width:835px){
+    .menu-icon {
+        display: none;
+    }
 }
 
