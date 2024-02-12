@@ -40,7 +40,7 @@ a{
     font-family: poppins;
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/poppins/poppins-regular-webfont.woff') format('woff');
+    src: url('../fonts/poppins/poppins-regular-webfont.wof') format('woff');
 }
 @font-face {
     font-family: poppins;
@@ -72,13 +72,40 @@ a{
 }
 .Nav {
     display: grid;
-    grid-template-columns: 58px 510px 187px;
+    grid-template-columns: 58px 680px 187px;
     justify-content: space-between;
     align-items: center;
 }
 .Nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-
+    gap: 2.5rem;
 }
+.Nav ul li:first-child a {
+    font-weight: 600;
+    color: var(--color_C90000);
+}
+.Nav ul li:not(:first-child) a {
+    color: var(--color_7D7C7C);
+    font-weight: 500;
+}
+.Nav_link a {
+    padding: 9px 17px;
+    border: 1px solid var(--color_C90000);
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.Nav_link a:first-child {
+    color: var(--color_C90000);
+    font-weight: 400;
+}
+.Nav_link a:last-child {
+    background-color: var(--color_C90000);
+    color: var(--color_fff);
+    font-weight: 500;
+}
+
