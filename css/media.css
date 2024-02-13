@@ -1,0 +1,20 @@
+@media(max-width:834px){
+    .Nav {
+        grid-template-columns: repeat(3 , auto);
+    }
+    .Nav > ul {
+        display: none;
+    }
+    .Nav_link {
+        justify-self: center;
+    }
+    .menu-icon {
+        justify-self: flex-end;
+    }
+
+}
+@media(min-width:835px){
+    .menu-icon {
+        display: none;
+    }
+}

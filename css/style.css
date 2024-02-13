@@ -151,24 +151,46 @@ a{
     display: block;
 }
 
-@media(max-width:834px){
-    .Nav {
-        grid-template-columns: repeat(3 , auto);
-    }
-    .Nav > ul {
-        display: none;
-    }
-    .Nav_link {
-        justify-self: center;
-    }
-    .menu-icon {
-        justify-self: flex-end;
-    }
+.header_buttom {
+    display: grid; 
+    grid-template-columns: repeat(2 , 1fr);
+}
+.content_left_header_buttom {
+    align-self: center;
+    width: 86%;
+}
+.content_left_header_buttom h1 {
+    color: var(--color_C90000);
+    font-size: 48px;
+    line-height: 75px;
+    font-weight: 600;
+}
+.content_left_header_buttom p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--color_504F4F);
+    max-width: 73%;
+}
+.order_food {
+    margin-top: 3rem;
+}
+.text_price_order_food {
+    color: var(--color_323232);
+    margin-bottom: 1rem;
+}
+.text_price_order_food span:first-child {
+    font-size: 16px;
+    font-weight:300;
+    
+}
+.text_price_order_food span:last-child {
+    font-size: 24px;
+    font-weight: 500;
 
 }
-@media(min-width:835px){
-    .menu-icon {
-        display: none;
-    }
+.action_order {
+    display: flex;
+    justify-content: space-between;
+    max-width: 79%;
 }
-
