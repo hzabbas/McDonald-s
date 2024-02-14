@@ -1,4 +1,28 @@
-@media(max-width:834px){
+@media(max-width:1074px){
+    .action_order {
+        max-width: 100%;
+    }
+    .fixed_box_delivery{
+        padding: 7px;
+        top: 1rem;
+        left: -7rem;
+    }
+    .fixed_box_delivery div span {
+        font-size: 16px;
+    }
+    .content_left_header_buttom h1 {
+        font-size: 40px;
+        line-height: 65px;
+    }
+    .button_action_order button {
+        width: 20px;
+    }
+    .action_order > button{
+        padding: 0px 20px;
+    }
+}
+
+@media(max-width:835px){
     .Nav {
         grid-template-columns: repeat(3 , auto);
     }
@@ -10,6 +34,17 @@
     }
     .menu-icon {
         justify-self: flex-end;
+    }
+    .button_action_order {
+        max-width: 50%;
+        gap: 4px;
+    }
+    .action_order{
+        gap: 25px;
+
+    }
+    .action_order > button{
+        padding: 0px 5px;
     }
 
 }
