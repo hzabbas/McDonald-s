@@ -40,7 +40,7 @@
         gap: 4px;
     }
     .action_order{
-        gap: 25px;
+        gap: 2px;
 
     }
     .action_order > button{
@@ -50,6 +50,51 @@
 }
 @media(min-width:835px){
     .menu-icon {
+        display: none;
+    }
+}
+
+@media(max-width:686px){
+    .header_buttom{
+    grid-template-columns: repeat(1 , 1fr);
+    }
+    .content_left_header_buttom{
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .content_left_header_buttom p {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .order_food_desktop {
+        display: none;
+    }
+    .order_food_mobile {
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .action_order {
+        justify-content: space-around;
+        width: 80%;
+    }
+    .action_order > button {
+        font-size: 17px;
+    }
+    .fixed_box_delivery {
+        position: static;
+        width:25%;
+        border-radius: 50px 0px 50px 50px;
+        -webkit-border-radius: 50px 0px 50px 50px;
+        -moz-border-radius: 50px 0px 50px 50px;
+        -ms-border-radius: 50px 0px 50px 50px;
+        -o-border-radius: 50px 0px 50px 50px;
+    }
+}
+@media(min-width:685px){
+    .order_food_mobile {
         display: none;
     }
 }
