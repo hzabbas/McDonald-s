@@ -12,6 +12,9 @@ ul{
 a{
     text-decoration: none;
 }
+button {
+    border: none;
+}
 img {
     width: 100%;
 }
@@ -59,6 +62,7 @@ img {
     --color_323232:#323232;
     --color_FFC300:#FFC300;
     --color_FFF6A3:#FFF6A3;
+    --color_FFFDE6:#FFFDE6;
     --color_E3E3E3:#E3E3E3;
     --color_F1F1F1:#F1F1F1;
     --color_rgb_241:rgba(241, 241, 241, 0.70);
@@ -336,5 +340,95 @@ img {
     color: var(--color_323232)  !important;
     font-weight: 600 !important;
 }
+.row_grid_food_products {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    justify-content: center;
+    gap: 30px;
+    margin-top: 32px;
+}
+.item_food_grid {
+    border: 1px solid var(--color_E3E3E3);
+    padding: 16px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px ;
+}
+.badge_discount {
+    width: 48px;
+    position: absolute;
+}
+.img_item_food_grid{
+    position: relative;
+    text-align: center;
+}
+.img_item_food_grid img {
+    max-width: 227px;
+    max-height: 170px;
+}
+.img_item_food_grid div {
+    height: 105px;
+    width: 100%;
+    background-color: var(--color_FFFDE6);
+    position: absolute;
+    bottom: -2px;
+    z-index: -1;
+
+}
+.info_item_food_grid {
+    margin-top: 18px;
+}
+.info_item_food_grid h5 {
+    font-size: 20px;
+    color: var(--color_323232);     
+    font-weight: 600;
+}
+.info_item_food_grid p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--color_504F4F);
+    font-weight: 400;
+}
+.score_item_food_grid {
+    margin: 12px 0 20px 0;
+
+}
+.score_item_food_grid span {
+    color: var(--color_7D7C7C);
+    font-size: 14px;
+    font-weight: 500;
+}
+.buttom_item_food_grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttom_item_food_grid span{
+    font-size: 24px;
+    font-weight: 600;
+}
+.buttom_item_food_grid button {
+    background-color: var(--color_C90000);
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.see_all_food{
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.see_all_food a{
+    color: var(--color_504F4F);
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
 
 
