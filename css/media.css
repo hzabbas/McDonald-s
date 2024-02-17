@@ -46,6 +46,14 @@
     .action_order > button{
         padding: 0px 5px;
     }
+    .item_food_off:hover{
+        background-color: var(--color_C90000);
+        transform: scale(.95);
+        -webkit-transform: scale(.95);
+        -moz-transform: scale(.95);
+        -ms-transform: scale(.95);
+        -o-transform: scale(.95);
+}
 
 }
 @media(min-width:835px){
