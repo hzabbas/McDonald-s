@@ -20,6 +20,9 @@
     .action_order > button{
         padding: 0px 20px;
     }
+    .section_search_location img{
+        max-width: 105px;
+    }
 }
 
 @media(max-width:835px){
@@ -53,6 +56,12 @@
         -moz-transform: scale(.95);
         -ms-transform: scale(.95);
         -o-transform: scale(.95);
+}
+.content_search_location form{
+    width: 93%;
+}
+.section_search_location img {
+    max-width: 74px;
 }
 
 }
@@ -153,5 +162,22 @@
 @media(min-width:685px){
     .order_food_mobile {
         display: none;
+    }
+}
+@media (max-width:550px){
+    .content_search_location form{
+        height: 49px;
+    }
+    .content_search_location form input{
+       font-size: 13px;
+    }
+    .content_search_location form button{
+      top: 11%;
+    }
+    .content_search_location{
+        text-align: center;
+    }
+    .section_search_location img:nth-child(4){
+        top: 7%;
     }
 }
