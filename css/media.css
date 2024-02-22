@@ -63,6 +63,21 @@
 .section_search_location img {
     max-width: 74px;
 }
+.section_food{
+    margin-top: 4rem;
+}
+.info_site_footer{
+    grid-row: 2;
+    grid-column: 2 span;
+    justify-self: center;
+    margin-top: 2rem;
+}
+.grid_section_footer{
+    grid-template-columns: repeat(2,1fr);
+}
+.grid_section_footer .link_footer:nth-child(2){
+    justify-self: center;
+}
 
 }
 @media (max-width:999px){
